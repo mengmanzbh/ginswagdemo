@@ -22,7 +22,7 @@
                 "tags": [
                     "bottles"
                 ],
-                "summary": "List bottles",
+                "summary": "List bottles 获取产品列表",
                 "responses": {
                     "200": {
                         "description": "OK",
@@ -59,7 +59,7 @@
         },
         "/bottles/{id}": {
             "get": {
-                "description": "get string by ID",
+                "description": "get string by ID 通过ID获取产品",
                 "consumes": [
                     "application/json"
                 ],
