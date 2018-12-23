@@ -12,7 +12,7 @@
     "paths": {
         "/bottles": {
             "get": {
-                "description": "get bottles",
+                "description": "get bottles 获取产品",
                 "consumes": [
                     "application/json"
                 ],
