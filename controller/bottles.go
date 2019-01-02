@@ -12,10 +12,6 @@ const APPKEY = "5b433b1f92d41bba340a5bb47464ce32" //您申请的APPKEY
 // ShowBottle godoc
 // @Summary 查询站点的简码
 // @Description 查询站点的简码，一般不会变，请做好缓存
-// @ID get-string-by-int
-// @Tags bottles
-// @Accept  json
-// @Produce  json
 // @Param  stationName path string true "站点名，如苏州、苏州北，不需要加“站”字" 
 // @Router /cityCode [post]
 func (c *Controller) ShowBottle(ctx *gin.Context) {
