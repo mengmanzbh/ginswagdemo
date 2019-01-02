@@ -22,7 +22,7 @@ func CityCode(){
 	param.Set("stationName","") //站点名，如苏州、苏州北，不需要加“站”字
 	param.Set("all","1") //如果需要全部站点简码，请将此参数设为1
 	//发送请求
-	data,err:=Get(juheURL,param)
+	data,err:=Post(juheURL,param)
 	if err!=nil{
 		fmt.Errorf("请求失败,错误信息:\r\n%v",err)
 	}else{
