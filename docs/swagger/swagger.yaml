@@ -62,19 +62,12 @@ paths:
       - bottles
   /cityCode:
     post:
-      consumes:
-      - application/json
       description: 查询站点的简码，一般不会变，请做好缓存
-      operationId: get-string-by-int
       parameters:
       - description: 站点名，如苏州、苏州北，不需要加“站”字
         in: path
         name: stationName
         required: true
         type: string
-      produces:
-      - application/json
       summary: 查询站点的简码
-      tags:
-      - bottles
 swagger: "2.0"
