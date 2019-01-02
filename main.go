@@ -17,13 +17,12 @@ func main() {
 
 	c := controller.NewController()
 
-	v1 := r.Group("/api/v1")
+	v1 := r.Group("/api/")
 	{
 
-		bottles := v1.Group("/bottles")
+		bottles := v1.Group("/cityCode")
 		{
-			bottles.GET(":id", c.ShowBottle)
-			bottles.GET("", c.ListBottles)
+			bottles.POST(":stationName", c.cityCode)
 		}
 		
 	}
