@@ -21,12 +21,13 @@ const APPKEY = "5b433b1f92d41bba340a5bb47464ce32" //您申请的APPKEY
 func (c *Controller) ShowBottle(ctx *gin.Context) {
         //请求地址
 	juheURL :="http://op.juhe.cn/trainTickets/cityCode"
+	stationName :=c.Param("stationName")
 	//初始化参数
 	param:=url.Values{}
 	//配置请求参数,方法内部已处理urlencode问题,中文参数可以直接传参
 	param.Set("key",APPKEY) //您申请的appKey
 	param.Set("dtype","json") //返回的格式，json或xml，默认json
-	param.Set("stationName","") //站点名，如苏州、苏州北，不需要加“站”字
+	param.Set("stationName",stationName) //站点名，如苏州、苏州北，不需要加“站”字
 	param.Set("all","1") //如果需要全部站点简码，请将此参数设为1
 	//发送请求
 	data,err:=Post(juheURL,param)
