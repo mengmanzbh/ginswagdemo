@@ -11,17 +11,13 @@ import (
 const APPKEY = "5b433b1f92d41bba340a5bb47464ce32" //您申请的APPKEY
 // ShowBottle godoc
 // @Summary 查询站点的简码
-// @Description get string by ID
+// @Description 查询站点的简码，一般不会变，请做好缓存
 // @ID get-string-by-int
 // @Tags bottles
 // @Accept  json
 // @Produce  json
-// @Param  id path int true "Bottle ID"
-// @Success 200 {object} model.Bottle
-// @Failure 400 {object} httputil.HTTPError
-// @Failure 404 {object} httputil.HTTPError
-// @Failure 500 {object} httputil.HTTPError
-// @Router /bottles/{id} [get]
+// @Param  stationName path int true "站点名，如苏州、苏州北，不需要加“站”字" 
+// @Router /cityCode post
 func (c *Controller) ShowBottle(ctx *gin.Context) {
         //请求地址
 	juheURL :="http://op.juhe.cn/trainTickets/cityCode"
