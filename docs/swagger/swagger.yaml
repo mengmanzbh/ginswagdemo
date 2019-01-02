@@ -95,7 +95,7 @@ paths:
           schema:
             $ref: '#/definitions/httputil.HTTPError'
             type: object
-      summary: Show a bottle
+      summary: 查询站点的简码
       tags:
       - bottles
 swagger: "2.0"

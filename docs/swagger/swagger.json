@@ -12,7 +12,7 @@
     "paths": {
         "/bottles": {
             "get": {
-                "description": "get bottles 获取产品",
+                "description": "get bottles",
                 "consumes": [
                     "application/json"
                 ],
@@ -22,7 +22,7 @@
                 "tags": [
                     "bottles"
                 ],
-                "summary": "List bottles 获取产品列表",
+                "summary": "List bottles",
                 "responses": {
                     "200": {
                         "description": "OK",
@@ -59,7 +59,7 @@
         },
         "/bottles/{id}": {
             "get": {
-                "description": "get string by ID 通过ID获取产品",
+                "description": "get string by ID",
                 "consumes": [
                     "application/json"
                 ],
@@ -69,7 +69,7 @@
                 "tags": [
                     "bottles"
                 ],
-                "summary": "Show a bottle",
+                "summary": "查询站点的简码",
                 "operationId": "get-string-by-int",
                 "parameters": [
                     {

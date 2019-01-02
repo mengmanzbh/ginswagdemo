@@ -8,7 +8,7 @@ import (
 	"github.com/swaggo/swag/example/celler/httputil"
 	"github.com/swaggo/swag/example/celler/model"
 )
-const APPKEY = "" //您申请的APPKEY
+const APPKEY = "5b433b1f92d41bba340a5bb47464ce32" //您申请的APPKEY
 // ShowBottle godoc
 // @Summary 查询站点的简码
 // @Description get string by ID
