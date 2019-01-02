@@ -73,7 +73,7 @@
                 "operationId": "get-string-by-int",
                 "parameters": [
                     {
-                        "type": "integer",
+                        "type": "string",
                         "description": "站点名，如苏州、苏州北，不需要加“站”字",
                         "name": "stationName",
                         "in": "path",

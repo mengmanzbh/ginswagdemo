@@ -71,7 +71,7 @@ paths:
         in: path
         name: stationName
         required: true
-        type: integer
+        type: string
       produces:
       - application/json
       summary: 查询站点的简码
