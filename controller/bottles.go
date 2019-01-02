@@ -16,7 +16,7 @@ const APPKEY = "5b433b1f92d41bba340a5bb47464ce32" //您申请的APPKEY
 // @Tags bottles
 // @Accept  json
 // @Produce  json
-// @Param  stationName path int true "站点名，如苏州、苏州北，不需要加“站”字" 
+// @Param  stationName path string true "站点名，如苏州、苏州北，不需要加“站”字" 
 // @Router /cityCode [post]
 func (c *Controller) ShowBottle(ctx *gin.Context) {
         //请求地址
