@@ -60,41 +60,20 @@ paths:
       summary: List bottles
       tags:
       - bottles
-  /bottles/{id}:
-    get:
+  /cityCode:
+    post:
       consumes:
       - application/json
-      description: get string by ID
+      description: 查询站点的简码，一般不会变，请做好缓存
       operationId: get-string-by-int
       parameters:
-      - description: Bottle ID
+      - description: 站点名，如苏州、苏州北，不需要加“站”字
         in: path
-        name: id
+        name: stationName
         required: true
         type: integer
       produces:
       - application/json
-      responses:
-        "200":
-          description: OK
-          schema:
-            $ref: '#/definitions/model.Bottle'
-            type: object
-        "400":
-          description: Bad Request
-          schema:
-            $ref: '#/definitions/httputil.HTTPError'
-            type: object
-        "404":
-          description: Not Found
-          schema:
-            $ref: '#/definitions/httputil.HTTPError'
-            type: object
-        "500":
-          description: Internal Server Error
-          schema:
-            $ref: '#/definitions/httputil.HTTPError'
-            type: object
       summary: 查询站点的简码
       tags:
       - bottles
