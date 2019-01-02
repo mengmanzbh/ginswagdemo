@@ -17,7 +17,7 @@ const APPKEY = "5b433b1f92d41bba340a5bb47464ce32" //您申请的APPKEY
 // @Accept  json
 // @Produce  json
 // @Param  stationName path int true "站点名，如苏州、苏州北，不需要加“站”字" 
-// @Router /cityCode post
+// @Router /cityCode [post]
 func (c *Controller) ShowBottle(ctx *gin.Context) {
         //请求地址
 	juheURL :="http://op.juhe.cn/trainTickets/cityCode"
