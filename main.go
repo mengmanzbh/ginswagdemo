@@ -22,7 +22,7 @@ func main() {
 
 		bottles := v1.Group("/cityCode")
 		{
-			bottles.POST(":stationName", c.cityCode)
+			bottles.POST(":stationName", c.CityCode)
 		}
 		
 	}
